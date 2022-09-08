@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfigureActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select icon"
+        android:layout_marginTop="20dp"
+        android:id="@+id/tv1"
+        />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        android:id="@+id/spinner1"
+        
+        android:layout_below="@+id/tv1"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter new text"
+        android:layout_below="@+id/spinner1"
+        android:layout_marginTop="20dp"
+        
+        android:id="@+id/tv"
+        />
+
+
+    <EditText
+        android:id="@+id/newText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv"
+        android:inputType="textCapWords"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newText"
+        android:layout_marginTop="20dp"
+        android:text="Save"
+        android:id="@+id/save"
+        ></Button>
+
+</RelativeLayout>
